@@ -1,0 +1,89 @@
+%!TEX program = xelatex
+\documentclass[11pt, a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T2A]{fontenc}
+\usepackage[russian]{babel}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{geometry}
+\geometry{left=1.5cm, right=1.5cm, top=1.5cm, bottom=1.5cm}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.4em}
+
+\newcommand{\sectionresume}[1]{\vspace{0.6em}\textbf{\large #1}\vspace{0.3em}\hrule\vspace{0.4em}}
+
+\begin{document}
+
+\noindent
+\begin{minipage}[t]{0.72\textwidth}
+{\LARGE \textbf{Даня Матус}}\\[0.3em]
+\textbf{Backend-разработчик | C++ \& Go}\\[0.5em]
+\texttt{matus.daniil@gmail.com} \quad $|$ \quad Telegram: \href{https://t.me/falkrammm}{@falkrammm} \quad $|$ \quad Москва\\
+\end{minipage}%
+\hfill
+\begin{minipage}[t]{0.22\textwidth}
+\raggedleft
+\includegraphics[width=2.8cm, height=2.8cm, keepaspectratio]{image.jpg}
+\end{minipage}
+
+\vspace{0.6em}
+\sectionresume{О себе (Summary)}
+
+Backend-разработчик с опытом более 3 лет в Яндекс Поиске.\\\\
+Специализация: бэкенд карточек товаров, пайплайны обработки данных (real-time и оффлайн), дистрибуция продукта и рост KPI.\\
+Работаю в Яндексе в команде Еком Поиска. Спроектировал и вывел в прод проекты «Цена ОК» и склейку товаров для «Покупка в 1 клик», год полностью отвечал за разработку дистрибуции Еком Поиска (до ~5 млн пушей в день, ~6\% CTR, до четверти МАУ еком-аудитории РФ). Провожу собеседования и кодовые секции, обучил и устроил 2 стажёров. Студент ШАД по треку ML. Ценность: ведение фичей end-to-end от идеи до продакшена и обеспечение стабильности высоконагруженных процессов.
+
+\sectionresume{Технический стек}
+
+\begin{itemize}[nosep, leftmargin=*]
+  \item \textbf{Языки:} C++, Go
+  \item \textbf{Фреймворки и окружение:} REST API, микросервисы, пайплайны данных (real-time и batch)
+  \item \textbf{Данные и очереди:} Logbroker (аналог Kafka), Nirvana (аналог Airflow), Temporal, YTsaurus
+\end{itemize}
+
+\sectionresume{Опыт работы}
+
+\textbf{Яндекс, Еком Поиск} \quad $|$ \quad \textbf{Backend-разработчик} \quad $|$ \quad весна 2023 -- н.в. \quad $|$ \quad Москва, офис/гибрид
+
+Еком Поиск — срез поиска по товарным запросам; крупнейшая база товаров в рунете (порядка 40 млрд товаров).
+
+\begin{itemize}[nosep, leftmargin=*]
+  \item Полностью спроектировал и вывел в прод проект \href{https://www.cnews.ru/news/line/2025-10-14_yandeks_vnedril_ok-tsenu}{«Цена ОК»} (процессы и релизы).
+  \item С нуля построил процессы склейки товаров для \href{https://yandex.ru/support/search/ru/quick-purchase}{«Покупка в 1 клик»}: согласование с продактами и смежными командами (модель склейки, GPT-разметка, ассесоры), стабильный процесс обработки данных в кратчайшие сроки, приёмы качества, релизные циклы, мониторинги и аналитические дашборды.
+  \item Год полностью отвечал за разработку дистрибуции Еком Поиска (пуши, письма, SEO в Google/Bing, in-app, рекламные кампании карточек) в связке с продактом и аналитиком. Основной KPI: монетарная ценность поиска; вторичные: объём пушей, CTR, заспамленность. Довёл поток до порядка 5 млн пушей в день (до четверти МАУ еком-аудитории РФ) со средним CTR порядка 6\%.
+  \item Разрабатывал бэкенды карточек товаров; участвовал в «Большом поиске» на всех стадиях кроме базовых: вытягивал факторы ранжирования и новые фичи до фронта, руководил реализацией ряда фичей end-to-end.
+  \item Собирал пайплайны обработки данных: real-time (Temporal, Logbroker) и оффлайн (Nirvana); вёл A/B-эксперименты и аналитику; отвечал за стабильность процессов (приёмки, мониторинги, алерты, доки, code style).
+  \item Реализовал SEO URL Еком Поиска в Google/Bing и внедрение веб-пушей Яндекса во внешние браузеры (Chrome, Vivaldi). Создавал новые тематические блоки с end-to-end внедрением до прода.
+  \item Обеспечивал стабильность Еком Поиска: дежурства за рантайм по B2C-фичам (приёмки, мониторинги, алерты, баги, инциденты, учения). Товарные решения для Алисы (ручки, аналитика).
+\end{itemize}
+\vspace{3.2em}
+\sectionresume{Образование}
+
+\begin{itemize}[nosep, leftmargin=*]
+  \item \textbf{Белорусский государственный университет (БГУ)} — бакалавриат
+  \item \textbf{Школа анализа данных (ШАД), Яндекс} — студент по треку ML
+\end{itemize}
+
+\sectionresume{Дополнительно}
+
+\begin{itemize}[nosep, leftmargin=*]
+  \item Активно изучаю Go и ML.
+  \item Проведение технических собеседований и кодовых секций в Яндексе.
+  \item Менторство: 2 стажёра обучены и трудоустроены (от найма до онбординга и работы).
+  \item Активно использую в работе различные агенты (Cursor и внутренние кодовые агенты)
+\end{itemize}
+
+\sectionresume{Языки}
+
+\begin{itemize}[nosep, leftmargin=*]
+  \item Русский — родной
+  \item Английский — B2
+  \item Польский — B1
+\end{itemize}
+
+\vspace{1.2em}
+\hrule
+\vspace{0.8em}
+\end{document}
